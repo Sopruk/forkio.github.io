@@ -1,4 +1,4 @@
-@media screen and (min-width:320px) {
+@media screen and (min-width: 320px) {
     .pricing {
         background-image: url("../img/pricing/pricing-bg.png");
         padding: 10px;
@@ -81,26 +81,27 @@
         
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
     .pricing {
         &__wrapper {
             @include flex-wrapp;
             flex-direction: row;
-            width: 600px;
+            justify-content: center;
         }
         &__title {
             font-size: 32px;
-            padding-top: 80px; ;
+            padding-top: 80px;
         }
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 993px) {
     .pricing {
         &__tittle {
             font-size: 46px;
             padding: 50px;
             line-height: normal;
         }
+
         &__wrapper {
             display: flex;
             flex-direction: row;

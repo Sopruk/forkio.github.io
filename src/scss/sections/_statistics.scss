@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) {
   .statistics {
     @include flex-wrapp;
     @include flex-center;
@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .statistics {
     &__title {
       font-size: 30px;
@@ -45,7 +45,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 993px) {
   .statistics__width {
     max-width: 1200px;
     margin: 0 auto;

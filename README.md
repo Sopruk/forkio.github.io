@@ -13,9 +13,14 @@
 #### Завдання, які виконував студент №1
  - Зверстав шапку сайта із верхнім меню (включаючи випадаюче меню при малому розширені екрану). 
  - Зверстав секцію `People Are Talking About Fork`.
+- Розмістив сторінку проекту на Github Pages.
+
+https://sopruk.github.io/forkio.github.io/
 
 #### Завдання, які виконував студент №2
- - Зверстав блок `Revolutionary Editor
+ - Зверстав блок ` People Are Talking About Fork,
+ - Зверстав секцію `Here is what you get`.
  - Зверстав секцію `Here is what you get`.
  - Зверстав секцію `Fork Subscription Pricing`.
+ - Налаштував Gulp.
 

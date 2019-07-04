@@ -34,9 +34,6 @@
   color:$btn-background;
   border: 1px solid $btn-background;
 }
-.btn--big:hover{
-  padding: 0 30px;
-}
 @include for-tablet {
   .btn {
     &--small {
