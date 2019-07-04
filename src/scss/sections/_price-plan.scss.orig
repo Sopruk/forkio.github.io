@@ -94,7 +94,11 @@
         }
     }
 }
-@media screen and (min-width: 1200px) {
+<<<<<<< HEAD
+@media screen and (min-width: 900px) {
+=======
+@media screen and (min-width: 993px) {
+>>>>>>> 6b2806a86bd12158efd02786417ea37bcd49b074
     .pricing {
         background: url("../img/pricing/pricing-bg.png") no-repeat;
         &__tittle {
