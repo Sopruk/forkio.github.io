@@ -1,7 +1,7 @@
 ﻿#### Step Project Forkio
 
 #### Учасники проекту:
-- Студент №1: Сопрук Олександр;
+- Студент №1: Олександр;
 - Студент №2: Ден; 
 #### Перелік  використаних технологій:
 - Mobile first;
@@ -18,8 +18,7 @@
 https://sopruk.github.io/forkio.github.io/
 
 #### Завдання, які виконував студент №2
- - Зверстав блок ` People Are Talking About Fork,
- - Зверстав секцію `Here is what you get`.
+ - Зверстав секцію `Revolutionary Editor`. 
  - Зверстав секцію `Here is what you get`.
  - Зверстав секцію `Fork Subscription Pricing`.
  - Налаштував Gulp.
