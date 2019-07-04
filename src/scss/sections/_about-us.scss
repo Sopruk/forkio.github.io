@@ -1,0 +1,89 @@
+@media screen and (min-width:320px) {
+    .about {
+        @include flex-center;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-size: cover;
+        background-image: url("../img/about-us/testmonials-bg.png");
+
+        &__title {
+            @include head-line (#ffffff, 36px );
+            padding: 92px;
+            font-weight: 700;
+        }
+        &__wrapper {
+            @include flex-center;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            @include flex-center;
+            flex-direction: column;
+            align-items: center;
+            &-text {
+                font-family: $main-font-2;
+                font-style: italic;
+                color: #ffffff;
+                text-align: center;
+                padding: 35px 40px;
+            }
+        }
+
+        &__footer-text {
+            display: none;
+        }
+        &__line {
+            margin: 45px;
+            width: 280px;
+            height: 2px;
+            background-color: #a5acb3;
+            
+        }
+        
+    }
+   
+}
+@media screen and (min-width:768px) {
+    .about {
+        padding: 10px;
+        &__item {
+            flex-basis: 50%;
+        }
+        &__wrapper {
+            @include flex-wrapp;
+            flex-direction: row;
+            align-items: baseline;
+        }
+        &__footer-text {
+            @include head-line (#8c7b8f, 14px);
+            font-family: $main-font-2;
+            display: block;
+            text-align: center;
+        }
+        &__line {
+            margin: 16px;
+            width: 700px;
+            height: 2px;
+            background-color: #a5acb3;
+            
+        }
+    }
+    
+}
+@media screen and (min-width:1200px) {
+    .about {
+        padding: 10px;
+        &__item {
+            flex-basis: 30%;
+        }
+        &__line {
+            width: 780px;
+        }
+        &__item {
+            padding-bottom: 100px;
+        }
+    }
+
+}

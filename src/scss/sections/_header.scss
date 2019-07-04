@@ -1,0 +1,119 @@
+.header{
+    padding: 0;
+    background: url("../img/header/header-background-mobile.png") no-repeat;
+    background-position: 50%;
+    height: 612px;
+    .container{
+        @include container;
+    }
+    &-title{
+        font-size: 48px;
+        color:#fff;
+        font-family: $main-font-1;
+        font-weight: bold;
+        text-align: center;
+    }
+    &-title-wrapper{
+        padding-top: 37px;
+    }
+
+    &-subtitle{
+        font-size: 18px;
+        color:#8d81ac;
+        text-transform: capitalize;
+        font-family: $main-font-1;
+        font-weight: 400;
+        text-align: center;
+        line-height: 34px;
+    }
+    &-subtitle-wrapper{
+        padding-top: 13px;
+    }
+
+    &-subtitle--small-grey{
+        color: #848e97;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    &-subtitle--small-grey-wrapper{
+        padding-top: 2px;
+    }
+
+    &-btn-wrapper{
+        text-align: center;
+        margin: 389px auto 10px auto;
+    }
+
+    &-subtitle-btn{
+        font-family: $main-font-1;
+        font-weight: 400;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+@media (min-width:543px){
+    .header-btn-wrapper{
+        margin: 423px auto 10px auto;
+    }
+}
+
+@include for-tablet {
+    .header{
+        height: 680px;
+        background: url("../img/header/header-background-desctop.png") 50% no-repeat;
+        background-color: #010005;
+        &-title{
+            font-size: 72px;
+        }
+        &-title-wrapper{
+            padding-top: 40px;
+        }
+        &-subtitle{
+            font-size: 24px;
+            text-transform: none;
+            font-family: $main-font-2;
+        }
+        &-subtitle-wrapper{
+            padding-top: 22px;
+        }
+        &-subtitle--small-grey{
+            color: #848e97;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: $main-font-1;
+        }
+        &-subtitle--small-grey-wrapper{
+            padding-top: 5px;
+        }
+
+        &-btn-wrapper{
+            margin: 440px auto 19px auto;
+        }
+    }
+}
+
+@include for-desctop{
+    .header{
+        height: 700px;
+        &-title{
+            font-size: 82px;
+        }
+        &-title-wrapper{
+            padding-top: 50px;
+        }
+        
+        &-subtitle{
+            font-size: 30px;
+        }
+        &-subtitle-wrapper{
+            padding-top: 18px;
+        }
+        &-subtitle--small-grey{
+            font-size: 16px;
+        }
+        &-subtitle--small-grey-wrapper{
+            padding-top: 7px;
+        }
+    }
+   
+}

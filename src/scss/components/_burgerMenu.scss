@@ -1,0 +1,47 @@
+.navbar-toggler {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+
+  &__line {
+    width: 26px;
+    height: 3px;
+    display: block;
+    border-radius: 1px;
+    background-color: #e5e3e3;
+    margin-bottom: 6px;
+  }
+
+  &--open {
+    .navbar-toggler__line:nth-child(3) {
+      width: 20px;
+      margin-left: 6px;
+    }
+    .navbar-toggler__line:nth-child(1) {
+      
+      
+      width: 26px;
+      margin-left: 0;
+    }
+  }
+
+  &--close {
+    .navbar-toggler__line:nth-child(1) {
+      width: 20px;
+      margin-left: 6px;
+    }
+    .navbar-toggler__line:nth-child(3) {
+      width: 26px;
+      margin-left: 0;
+    }
+  }
+}
+
+.navbar-toggler--open {
+}
+@include for-tablet {
+  .navbar-toggler {
+    display: none;
+  }
+}

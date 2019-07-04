@@ -1,0 +1,96 @@
+@media screen and (min-width:320px) {
+    .rewiev {
+        padding:10px;
+        text-align: center;
+        background-color: #f4f4f4;
+        &__title {
+            color: #8d81ac;
+            font-weight: 700;
+            font-size: 25px;
+            font-family: $main-font-1;
+            line-height: 28px;
+            padding: 34px 46px;
+        }
+        &__item {
+            &-img{
+                @include rewiev-img
+            }
+            &-title{
+                @include rewiev-title
+            }
+            &-text {
+                @include rewiev-text
+            }
+        }
+        &__photo {
+            background-image: url("../img/rewiev/editor@1X.png");
+            height: 380px;
+        }
+    }    
+}
+@media screen and (min-width:768px) {
+    .rewiev {
+        box-sizing: border-box;
+        overflow: hidden;
+        &__width {
+            width: 650px;
+            margin: 0 auto;
+        }    
+        &__title {
+            font-size: 35px; 
+            text-align: center;       
+        }
+        &__item {
+            @include flex-center;        
+            &-text {
+                padding: 17px 0;
+            }
+            &-img {
+                padding: 0;
+                margin: 25px 0;
+            }
+            div {
+                text-align: left;
+                width: 500px;
+                padding: 20px 40px;
+            }            
+        }  
+        &__photo {
+            background-image: url("../img/rewiev/editor@2X.png");
+            height: 520px;
+            width: 100%;
+        }        
+    }
+    .second {
+        margin: 25px 10px;
+    }
+    .third {
+        margin: 25px;
+    }
+    .fourth {
+        margin: 30px 20px;
+    }    
+}
+@media screen and (min-width: 1200px) {
+    .rewiev {
+        &__width {
+            display: flex;
+            width: 1200px;
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px;
+
+        } 
+        &__title {
+            position: absolute;
+            padding-top: 100px;
+            text-align: right;
+            left: 720px;
+        } 
+        &__photo {
+            margin-top: 130px;
+        }     
+    }
+}

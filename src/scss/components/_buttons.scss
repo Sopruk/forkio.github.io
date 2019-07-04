@@ -1,0 +1,60 @@
+.btn {
+  display: inline-block;
+  background-color: $btn-background;
+  font-family: $main-font-1;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  box-sizing: border-box;
+
+  &--small {
+    border-radius: 22px;
+    font-size: 15px;
+    padding: 0 24px;
+    line-height: 33px;
+    height: 37px;
+    &-wrapper {
+      margin-top: 4px;
+    }
+  }
+
+  &--big {
+    border-radius: 22px;
+    margin-top: 2px;
+    padding: 0 31px;
+    line-height: 46px;
+    font-size: 18px;
+    height: 46px;
+  }
+}
+.btn:hover{
+  transition: .4s all;
+  background-color:#fff;
+  color:$btn-background;
+  border: 1px solid $btn-background;
+}
+.btn--big:hover{
+  padding: 0 30px;
+}
+@include for-tablet {
+  .btn {
+    &--small {
+      font-size: 16px;
+      padding: 0 35px;
+      line-height: 38px;
+      height: 38px;
+      &-wrapper {
+        margin-top: 2px;
+      }
+    }
+    &--big {
+      border-radius: 30px;
+      margin-top: 2px;
+      padding: 0 63px;
+      line-height: 62px;
+      font-size: 21px;
+      height: 62px;
+    }
+  }
+}

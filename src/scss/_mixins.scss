@@ -1,0 +1,79 @@
+@mixin flex-wrapp{
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin head-line ($title-color, $title-size) {
+  color: $title-color;
+  font-family: $main-font-1;
+  font-size: $title-size;
+}
+// Media querys
+
+@mixin for-tablet {
+  @media (min-width: 594px) {
+    @content;
+  }
+}
+
+@mixin for-desctop {
+  @media (min-width: 993px) {
+    @content;
+  }
+}
+
+// Herper clases
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    display: table; // 2
+    content: " "; // 1
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  @include for-tablet {
+    padding: 0 20px;
+  }
+  @include for-desctop {
+    //padding: 0 90px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@mixin rewiev-img {
+  padding: 23px
+}
+@mixin rewiev-title {
+  font-family: $main-font-1;
+  font-size: 16px;
+  color: #323232;
+}
+@mixin rewiev-text {
+  font-size: 14px;
+  color: #848e97;
+  font-family: $main-font-2;
+  padding: 17px 25px;
+}
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin pricing-box {
+  background-color: $background-pricing-box;
+  @include flex-column-center;
+  justify-content: space-between;
+}

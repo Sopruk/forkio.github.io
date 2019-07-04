@@ -1,0 +1,112 @@
+@media screen and (min-width:320px) {
+    .pricing {
+        background-image: url("../img/pricing/pricing-bg.png");
+        padding: 10px;
+        background-size: cover;
+        background-position: bottom;
+        @include flex-center;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            @include head-line (#ffffff, 36px);
+            font-weight: 600;
+            padding-top: 71px;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+        &__wrapper {
+            @include flex-center;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__box {
+            @include pricing-box;
+            height: 457px;
+            width: 257px;
+            margin: 10px;
+            font-family: $main-font-1;
+            &-user {
+                height: 100px;
+                @include flex-center;
+                align-items: center;
+                color: #ffffff;
+                background-color:#685b6a;
+                width: 100%;
+                font-size: 18px;
+                font-weight: 300;
+            }
+        &-price {
+            font-size: 60px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+            &-month {
+                color: #8f8691;
+                font-size: 12px;
+            }
+            &-line {
+                width: 60px;
+                height: 5px;
+                background-color: #8d81ac;
+                display: block;
+            }
+            &-license {
+                text-align: center;
+                font-size: 18px;
+                line-height: 24px;
+                padding: 0 35px;
+                color: #ffffff;
+            }
+            &-btn {
+                display: block;
+                width: 160px;
+                height: 42px;
+                color: #ffffff;
+                border-radius: 22px;
+                background-color: #776b79;
+                text-align: center;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+        }
+        .active {
+            background-color: #413344;
+            width: 290px;
+            height: 560px;
+            .pricing__box-user {
+                background-color: #3a2d3d;
+            }
+        }
+        
+    }
+}
+@media screen and (min-width: 768px) {
+    .pricing {
+        &__wrapper {
+            @include flex-wrapp;
+            flex-direction: row;
+            width: 600px;
+        }
+        &__title {
+            font-size: 32px;
+            padding-top: 80px; ;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .pricing {
+        &__tittle {
+            font-size: 46px;
+            padding: 50px;
+            line-height: normal;
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
